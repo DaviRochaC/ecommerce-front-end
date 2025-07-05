@@ -1,0 +1,45 @@
+.card-noticia {
+    border: 1px solid rgba(0,0,0,0.07); /* ~7 % de preto */    
+    border-radius: 15px;
+    text-align: justify;
+    height: 612px;
+    width: 612px;
+    margin: 35px;
+    box-sizing: border-box;
+}
+
+.card-noticia img {
+    height: 350px;
+    width: 100%;
+    display: block;
+    border: none;
+}
+
+.card-body {
+    padding: 20px;
+}
+
+.card-noticia h3 {
+    font-size: 22px;
+    margin-top: 25px;
+
+}
+
+.card-noticia p {
+    margin-top: 25px;
+}
+
+.card-body a {
+  display: inline-block;
+  padding: 6px 12px;
+  background: #f5f5f5;
+  border-radius: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.card-noticia:hover {
+  box-shadow: 0 8px 24px rgba(0,0,0,0.15);
+
+}
+
