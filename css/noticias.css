@@ -1,18 +1,21 @@
-
-main {
-  padding: 100px 200px;
+.container {
+  display: grid;
+  margin: 0 auto;
+  max-width: 1400px;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 50px;
 }
 
 .card-noticia {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   border: 1px solid rgba(0, 0, 0, 0.07);
   border-radius: 15px;
   text-align: justify;
-  height: 670px;
+  height: auto;
   width: 670px;
-  margin: 20px;
   box-sizing: border-box;
-  float: left;
-
 }
 
 .card-noticia:hover {
@@ -21,25 +24,13 @@ main {
 
 .card-noticia img {
   height: 350px;
-  width: 100%;
-  display: block;
+  width: auto;
+  object-fit: cover;
   border: none;
 }
 
 .card-body {
   padding: 24px;
-}
-
-.card-body h5 {
-  display: inline-block;
-  padding: 2px 12px;
-  background: #f5f5f5;
-  border-radius: 25px;
-  font-weight: 600;
-  color: #333;
-  text-align: end;
-  text-decoration: none;
-  margin: 0;
 }
 
 .card-noticia h3 {
@@ -52,39 +43,25 @@ main {
 }
 
 .principal {
+  grid-column: 1 / -1;
   display: flex;
   flex-direction: row;
   width: 1380px;
   height: 680px;
-  overflow: hidden;
-  /* corta qualquer transbordo     */
 }
 
 .principal img {
-  flex: 0 0 50%;
-  /* ocupa 50% da largura, sem crescer */
   height: 100%;
-  /* igual à altura do card         */
-  object-fit: cover;
-  /* mantém proporção e corta excesso*/
 }
 
-.principal .card-body {
-  flex: 1;
-  /* resto do espaço                */
-  padding: 40px 48px;
-}
-
-.card-body h5 {
+.card-body .badge-categoria {
   display: inline-block;
   padding: 2px 12px;
   background: #f5f5f5;
   border-radius: 25px;
   font-weight: 600;
   color: #333;
-  text-align: end;
   text-decoration: none;
-  margin: 0;
 }
 
 .card-body a {
@@ -92,7 +69,6 @@ main {
   margin-left: auto;
   gap: 15px;
   width: max-content;
-  text-align: end;
   color: black;
   padding: 5px 10px;
   border-radius: 10px;

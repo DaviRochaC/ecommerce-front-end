@@ -1,7 +1,51 @@
 footer {
-    
+    margin-top: 50px;
+    background-color: #0F172A;
+    padding: 20px;
 }
 
-footer p {
+footer .container {
+    margin: 0 auto;
+    max-width: 1268px;
+    display: flex;
+    flex-direction: column;
+    color: lightgrey;
+}
+
+footer .grid {
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 1px solid white;
+    padding: 5px;
+}
+
+footer .grid h5 {
+    font-size: 16px;
+    color: white;
+}
+
+.links {
+    display: flex;
+    flex-direction: column;
+}
+
+.links a {
+    margin-bottom: 16px;
+    text-decoration: none;
+    font-weight: 500;
+    color: lightgrey;
+
+}
+
+.grid+p {
     text-align: center;
 }
+
+.identidade-visual {
+    max-width: 300px;
+}
+
+footer .grid h5.marca {
+  font-size: 20px;
+}
+
