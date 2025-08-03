@@ -1,0 +1,18 @@
+header {
+    display: flex;
+    justify-content: space-around;
+    background-color: #FFFFFF;
+    padding: 16px;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.07);
+    position: sticky;
+    top: 0;
+    width: 100%;
+}
+
+header a {
+    margin: 25px;
+    text-decoration: none;
+    color: black;
+    font-size: large;
+    font-weight: 500;
+}

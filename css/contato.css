@@ -1,0 +1,50 @@
+.container {
+    margin: 0 auto;
+    max-width: 1134px;
+}
+
+.principal {
+    display: flex;
+    gap: 50px;
+}
+
+.principal h2 {
+    margin-top: 5px;
+}
+
+
+.about,
+.formulario {
+    width: 550px;
+    height: 970px;
+    box-sizing: content-box;
+}
+
+.atendimento {
+    background-color: black;
+    color: white;
+    border-radius: 8px;
+    text-align: center;
+    padding: 20px;
+}
+
+.informacoes-contato h5,
+.perguntas-frequentes h5 {
+    margin: 5px;
+    font-size: 16px;
+}
+
+.informacoes-contato p,
+.perguntas-frequentes p {
+    margin: 5px;
+    font-size: 14px;
+    color: grey;
+}
+
+.informacoes-contato,
+.perguntas-frequentes {
+    margin-bottom: 20px;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 20px;
+    border-radius: 8px;
+}
