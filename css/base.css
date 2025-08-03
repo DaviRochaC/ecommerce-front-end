@@ -27,7 +27,8 @@ body {
     border-radius: 8px;
 }
 
-.btn-formulario {
+.btn {
+    margin-top: 5px;
     padding: 10px;
     background-color: black;
     color: white;

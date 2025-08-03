@@ -1,14 +1,12 @@
 .container {
     margin: 0 auto;
     max-width: 1134px;
-}
-
-.principal {
     display: flex;
     gap: 50px;
 }
 
-.principal h2 {
+
+.container h2 {
     margin-top: 5px;
 }
 
