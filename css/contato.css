@@ -1,6 +1,6 @@
 .container {
     margin: 0 auto;
-    max-width: 1134px;
+    max-width: 60%;
     display: flex;
     gap: 50px;
 }
@@ -13,9 +13,7 @@
 
 .about,
 .formulario {
-    width: 550px;
-    height: 970px;
-    box-sizing: content-box;
+    flex: 1;
 }
 
 .atendimento {
@@ -45,4 +43,11 @@
     border: 1px solid rgba(0, 0, 0, 0.07);
     padding: 20px;
     border-radius: 8px;
+}
+
+@media screen and (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+        max-width: 90%;
+    }
 }
