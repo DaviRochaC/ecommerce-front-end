@@ -1,12 +1,13 @@
 footer {
     margin-top: 50px;
-    background-color: #0F172A;
+    background-color: black;
     padding: 20px;
+    box-sizing: border-box;
 }
 
 footer .container {
     margin: 0 auto;
-    max-width: 1268px;
+    width: 70%;
     display: flex;
     flex-direction: column;
     color: lightgrey;
@@ -46,6 +47,28 @@ footer .grid h5 {
 }
 
 footer .grid h5.marca {
-  font-size: 20px;
+    font-size: 20px;
 }
 
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+    footer .container {
+        width: 100%;
+    }
+
+}
+
+
+@media screen and (max-width:768px) {
+    footer .grid {
+        flex-direction: column;
+    }
+
+    footer .container {
+        width: 100%;
+    }
+
+    .links a {
+        margin-bottom: 8px;
+    }
+}
