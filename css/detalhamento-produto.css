@@ -1,0 +1,188 @@
+.container {
+    margin: 0 auto;
+    width: 80%;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 50px;
+    flex-wrap: wrap;
+    text-align: left;
+}
+
+.especificacoes,
+.imagens {
+    flex: 1;
+}
+
+.destaque {
+    text-align: left;
+}
+
+.imagens .principal {
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+
+.precificacao .de {
+    display: inline;
+    margin-left: 3px;
+    color: gray;
+    font-size: 30px;
+    text-decoration: line-through;
+}
+
+.precificacao .por {
+    display: inline;
+    color: green;
+    font-weight: bold;
+    font-size: 35px;
+}
+
+.complementares {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.complementares img {
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    flex: 1;
+    border-radius: 10px;
+    max-width: 49%;
+    height: auto;
+    object-fit: contain;
+}
+
+.caracteristicas ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+
+p {
+    margin: 0;
+}
+
+.btn {
+    margin: 20px 0;
+}
+
+input[name="tamanho"] {
+    display: none;
+}
+
+
+.tamanhos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+}
+
+
+.tamanhos label {
+    cursor: pointer;
+}
+
+.tamanhos span {
+    display: inline-block;
+    padding: 10px 16px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 15px;
+    transition: all 0.2s ease;
+}
+
+.tamanhos input[type="radio"]:checked+span {
+    background-color: #BD3832;
+    color: white;
+}
+
+.cores {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.cores label {
+    font-size: 15px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+form {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+
+.formas-pagamento {
+    margin-top: 30px;
+    padding: 10px 20px;
+    background-color: #EFF6FF;
+    color: blue;
+    border-radius: 8px;
+}
+
+.formas-pagamento ul {
+    padding-left: 0;
+    list-style-position: inside;
+}
+
+.atendimentos {
+    margin-top: 30px;
+    display: flex;
+    gap: 25px;
+    justify-content: space-between;
+}
+
+.atendimentos div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 20px 10px;
+    width: 33%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.atendimentos p {
+    margin-top: 0px;
+    font-size: 15px;
+}
+
+
+@media screen and (max-width: 1023px) {
+    .container {
+        flex-direction: column;
+        max-width: 90%;
+    }
+}
+
+
+@media screen and (max-width: 768px) {
+    .atendimentos {
+        flex-direction: column;
+    }
+
+    .atendimentos div {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    .descricao p {
+        text-align: justify;
+    }
+
+    .caracteristicas li,
+    .descricao p {
+        font-size: 16px;
+    }
+
+    .formas-pagamento li {
+        font-size: 13px;
+    }
+}
