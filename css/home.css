@@ -1,0 +1,165 @@
+section .container {
+    max-width: 70%;
+}
+
+.apresentacao,
+.ilustracao {
+    flex: 1;
+    box-sizing: border-box;
+}
+
+
+.banner {
+    padding: 100px;
+    display: flex;
+    background-color: black;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.apresentacao span {
+    color: #BD3832;
+}
+
+.apresentacao h1,
+.apresentacao p,
+.apresentacao .btn {
+    margin-left: 100px;
+    max-width: 50%;
+    color: white;
+}
+
+.apresentacao h1 {
+    font-size: 70px;
+}
+
+.apresentacao p {
+    font-size: 25px;
+}
+
+.ilustracao img {
+    margin: auto;
+    max-width: 100%;
+    height: auto;
+}
+
+.apresentacao .btn {
+    width: max-content;
+    background-color: white;
+    color: black;
+}
+
+.atendimentos {
+    background-color: #F9FAFB;
+    display: flex;
+    justify-content: space-between;
+    padding: 30px;
+    gap: 30px;
+}
+
+.atendimentos div {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+    text-align: center;
+    border-radius: 10px;
+}
+
+.atendimentos p {
+    margin-top: 0px;
+    font-size: 18px;
+}
+
+.newsletter {
+    background-color: #BD3832;
+    color: white;
+}
+
+.newsletter form {
+    text-align: center;
+    margin: 15px auto 0 auto;
+    border: none;
+    max-width: 50%;
+}
+
+.newsletter form h2 {
+    font-size: 28px;
+}
+
+.aviso {
+    margin-top: 20px;
+    font-size: small;
+}
+
+.campo {
+    display: inline-block;
+    width: 70%;
+}
+
+.btn-formulario {
+    display: inline-block;
+    padding: 10px;
+    background-color: black;
+    color: white;
+    border-radius: 5px;
+    text-align: center;
+    font-size: large;
+    border: none;
+}
+
+footer {
+    margin-top: 0;
+}
+
+
+@media screen and (max-width: 1023px) {
+
+    section .container {
+        max-width: 95%;
+    }
+
+    .banner,
+    .atendimentos {
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .apresentacao h1,
+    .apresentacao p,
+    .apresentacao .btn {
+        margin: 15px 0;
+        max-width: 78%;
+    }
+
+}
+
+@media screen and (max-width: 769px) {
+    .banner {
+        padding: 10px;
+    }
+
+    .apresentacao h1 {
+        font-size: 40px;
+    }
+
+    .apresentacao p {
+        font-size: 20px;
+    }
+
+    section .container {
+        grid-template-columns: 1fr;
+    }
+
+    .atendimentos p {
+        font-size: 17px;
+    }
+
+    .aviso {
+        font-size: x-small;
+    }
+
+    .newsletter form {
+        max-width: 80%;
+    }
+}

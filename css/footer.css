@@ -53,9 +53,8 @@ footer .grid h5.marca {
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
     footer .container {
-        width: 100%;
+        width: 90%;
     }
-
 }
 
 
