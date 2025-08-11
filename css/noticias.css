@@ -1,7 +1,7 @@
 .container {
   display: grid;
-  margin: 0 auto;
-  max-width: 1400px;
+  margin: 25px auto;
+  max-width: 70%;
   grid-template-columns: repeat(2, 1fr);
   gap: 50px;
 }
@@ -13,8 +13,7 @@
   border: 1px solid rgba(0, 0, 0, 0.07);
   border-radius: 15px;
   text-align: justify;
-  height: auto;
-  width: 670px;
+  max-height: 670px;
   box-sizing: border-box;
 }
 
@@ -23,10 +22,13 @@
 }
 
 .card-noticia img {
-  height: 350px;
-  width: auto;
+  max-height: 350px;
+  width: 100%;
   object-fit: cover;
   border: none;
+  height: auto;
+  border-top-right-radius: 8px;
+  border-top-left-radius: 8px;
 }
 
 .card-body {
@@ -43,15 +45,14 @@
 }
 
 .principal {
-  grid-column: 1 / -1;
+  grid-column: span 2;
   display: flex;
   flex-direction: row;
-  width: 1380px;
-  height: 680px;
 }
 
 .principal img {
-  height: 100%;
+  width: 50%;
+  height: auto;
 }
 
 .card-body .badge-categoria {
@@ -66,7 +67,7 @@
 
 .card-body a {
   display: flex;
-  margin-left: auto;
+  align-self: end;
   gap: 15px;
   width: max-content;
   color: black;
@@ -84,4 +85,17 @@
 .card-body a .icone {
   width: 16px;
   height: 16px;
+}
+
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .container {
+    max-width: 95%;
+  }
+}
+
+@media screen and (max-width:768px) {
+  .container {
+    max-width: 95%;
+    grid-template-columns: 1fr;
+  }
 }
