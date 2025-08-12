@@ -64,6 +64,7 @@ section .container {
 .btn:hover {
     transform: scale(1.03);
     background-color: var(--cor-principal);
+    color: white;
 }
 
 .campo,
@@ -105,4 +106,16 @@ section .container {
     .destaque p {
         font-size: 18px;
     }
+}
+
+.limpar {
+    width: 30%;
+    background-color: white;
+    color: black;
+    border: var(--borda-padrao);
+}
+
+.acoes {
+    display: flex;
+    gap: 10px;
 }
