@@ -59,6 +59,7 @@ section .container {
     justify-content: center;
     box-sizing: border-box;
     border: none;
+    gap: 5px;
 }
 
 .btn:hover {
