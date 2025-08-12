@@ -43,20 +43,21 @@
                     atendê-lo!</p>
             </div>
             <div class="container">
-                <form class="formulario">
+                <form action="mailto:davirocha2002.dr@gmail.com?subject=Formulario Contato Site Air Game" method="POST"
+                    class="formulario" enctype="text/plain">
                     <h2>Envie sua Mensagem</h2>
                     <div class="campo">
                         <label>Seu E-mail</label>
-                        <input type="email" placeholder="seuemail@.com">
+                        <input name="email" type="email" placeholder="seuemail@.com">
                     </div>
                     <div class="campo">
                         <label>Assunto</label>
-                        <input type="text" placeholder="Qual motivo do seu contato?">
+                        <input name="assunto" type="text" placeholder="Qual motivo do seu contato?">
                     </div>
 
                     <div class="campo">
                         <label>Mensagem</label>
-                        <textarea rows="5" cols="33"
+                        <textarea name="mensagem" rows="5" cols="33"
                             placeholder="Descreva sua dúvida, solicitação ou sugestão..."></textarea>
                     </div>
                     <div class="acoes">

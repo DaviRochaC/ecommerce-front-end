@@ -43,35 +43,36 @@
             </div>
             <div class="container">
                 <div>
-                    <form class="formulario">
+                    <form action="mailto:davirocha2002.dr@gmail.com?subject=Formulario Cadastro Site Air Game"
+                        method="POST" class="formulario" enctype="text/plain">
                         <h2>Informações Pessoais</h2>
                         <div class="campo">
                             <label>Nome Completo</label>
-                            <input type="text" placeholder="Digite seu nome completo" required>
+                            <input name="nome" type="text" placeholder="Digite seu nome completo" required>
                         </div>
                         <div class="campo">
                             <label>E-mail</label>
-                            <input type="email" placeholder="seuemail@.com">
+                            <input name="nome" type="email" placeholder="seuemail@.com">
                         </div>
                         <div class="campo">
                             <label>CPF</label>
-                            <input type="text" placeholder="000.000.000-00">
+                            <input name="cpf" type="text" placeholder="000.000.000-00">
                         </div>
                         <div class="campo">
                             <label>Data de Nascimento</label>
-                            <input type="date" placeholder="dd/mm/aaaa">
+                            <input name="data-nascimento" type="date" placeholder="dd/mm/aaaa">
                         </div>
                         <div class="campo">
                             <label>Endereço Completo</label>
-                            <input type="text" placeholder="Rua, número, bairro, cidade, CEP">
+                            <input name="endereco-completo" type="text" placeholder="Rua, número, bairro, cidade, CEP">
                         </div>
                         <div class="campo">
                             <label>Profissão</label>
-                            <input type="text" placeholder="Sua profissão">
+                            <input name="profissao" type="text" placeholder="Sua profissão">
                         </div>
                         <div class="campo">
                             <label>Estado Civil</label>
-                            <select>
+                            <select name="estado-civil">
                                 <option value="" disabled selected>Selecione seu estado civil</option>
                                 <option value="solteiro">Solteiro(a)</option>
                                 <option value="casado">Casado(a)</option>
@@ -94,11 +95,11 @@
                                 <label for="outro">Outro</label>
                             </div>
                         </div>
-                        <div class="campo">
+                        <div name="observacoes" class="campo">
                             <label>Observacões</label>
                             <textarea rows="5" cols="33" placeholder="Informações adicionais (opcional)"></textarea>
                         </div>
-                        <div class="acoes"> 
+                        <div class="acoes">
                             <button class="btn" type="submit">Cadastrar</button>
                             <button class="btn limpar" type="reset">Limpar</button>
                         </div>
