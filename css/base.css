@@ -1,7 +1,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif !important;
     display: grid;
     grid-template-rows: auto 1fr auto
 }
@@ -17,6 +17,7 @@ body {
 }
 
 .destaque h1 {
+    font-weight: bold;
     font-size: 35px;
 }
 
