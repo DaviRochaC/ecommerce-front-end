@@ -40,7 +40,7 @@
 .informacoes-contato,
 .perguntas-frequentes {
     margin-bottom: 20px;
-    border: 1px solid rgba(0, 0, 0, 0.07);
+    border: var(--borda-padrao);
     padding: 20px;
     border-radius: 8px;
 }

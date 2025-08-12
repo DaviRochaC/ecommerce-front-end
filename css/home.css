@@ -18,7 +18,7 @@ section .container {
 }
 
 .apresentacao span {
-    color: #BD3832;
+    color: var(--cor-principal);
 }
 
 .apresentacao h1,
@@ -72,7 +72,7 @@ section .container {
 }
 
 .newsletter {
-    background-color: #BD3832;
+    background-color: var(--cor-principal);
     color: white;
 }
 

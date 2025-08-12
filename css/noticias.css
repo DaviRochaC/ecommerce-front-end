@@ -2,7 +2,7 @@
   display: flex;
   justify-content: space-between;
   flex-direction: column;
-  border: 1px solid rgba(0, 0, 0, 0.07);
+  border: var(--borda-padrao);
   border-radius: 15px;
   text-align: justify;
   max-height: 670px;
@@ -54,7 +54,7 @@
   color: black;
   padding: 5px 10px;
   border-radius: 10px;
-  border: 1px solid rgba(0, 0, 0, 0.07);
+  border: var(--borda-padrao);
   text-decoration: none;
   align-items: center;
 }

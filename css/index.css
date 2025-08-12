@@ -60,7 +60,7 @@ section .container p {
     margin-top: 20px;
     padding: 20px;
     border-radius: 8px;
-    background-color: #BD3832;
+    background-color: var(--cor-principal);
     color: black;
     width: max-content;
     text-decoration: none;
@@ -74,7 +74,7 @@ section .container p {
 .card {
     box-sizing: border-box;
     background-color: #f9fafb;
-    border: 1px solid rgba(0, 0, 0, 0.07);
+    border: var(--borda-padrao);
     width: max-content;
     box-sizing: border-box;
     border-radius: 8px;
@@ -85,7 +85,7 @@ section .container p {
 
 .card p {
     font-weight: bold;
-    color: #BD3832;
+    color: var(--cor-principal);
     font-size: 20px;
 }
 
