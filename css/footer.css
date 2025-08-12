@@ -52,8 +52,12 @@ footer .grid h5.marca {
 
 
 @media screen and (min-width: 768px) and (max-width: 1023px) {
+    footer .grid {
+        gap: 10px;
+    }
+
     footer .container {
-        width: 90%;
+        width: 95%;
     }
 }
 
@@ -62,11 +66,7 @@ footer .grid h5.marca {
     footer .grid {
         flex-direction: column;
     }
-
-    footer .container {
-        width: 100%;
-    }
-
+    
     .links a {
         margin-bottom: 8px;
     }

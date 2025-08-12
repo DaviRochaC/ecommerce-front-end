@@ -1,15 +1,21 @@
-.container {
-    margin: 0 auto;
+body {
+    background-color: #f8f9fa;
+}
+
+section .container {
     max-width: 60%;
-    display: flex;
     gap: 50px;
 }
 
-
-.container h2 {
+section .container h2 {
     margin-top: 5px;
 }
 
+.formulario,
+.informacoes-contato,
+.perguntas-frequentes {
+    background-color: white;
+}
 
 .about,
 .formulario {
@@ -46,7 +52,7 @@
 }
 
 @media screen and (max-width: 1023px) {
-    .container {
+   section .container {
         flex-direction: column;
         max-width: 90%;
     }

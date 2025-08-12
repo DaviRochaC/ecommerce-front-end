@@ -1,7 +1,4 @@
-.container {
-    margin: 0 auto;
-    width: 80%;
-    display: flex;
+section .container {
     padding: 20px;
     justify-content: space-between;
     gap: 50px;
@@ -156,7 +153,7 @@ form {
 
 
 @media screen and (max-width: 1023px) {
-    .container {
+    section .container {
         flex-direction: column;
         max-width: 90%;
     }
