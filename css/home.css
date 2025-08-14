@@ -2,19 +2,24 @@ section .container {
     max-width: 70%;
 }
 
-.apresentacao,
-.ilustracao {
-    flex: 1;
-    box-sizing: border-box;
-}
-
-
 .banner {
-    padding: 100px;
+    padding: 50px;
     display: flex;
     background-color: black;
+    justify-content: center;
+    gap: 10%;
+}
+
+.ilustracao {
+    display: flex;
     align-items: center;
-    justify-content: space-between;
+    max-width: 25%;
+}
+
+.apresentacao {
+    display: flex;
+    flex-direction: column;
+    max-width: 30%;
 }
 
 .apresentacao span {
@@ -22,10 +27,7 @@ section .container {
 }
 
 .apresentacao h1,
-.apresentacao p,
-.apresentacao .btn {
-    margin-left: 100px;
-    max-width: 50%;
+.apresentacao p {
     color: white;
 }
 
@@ -38,12 +40,14 @@ section .container {
 }
 
 .ilustracao img {
-    margin: auto;
-    max-width: 50%;
+    display: block;
+    margin-inline: auto;
+    max-width: 100%;
     height: auto;
 }
 
 .apresentacao .btn {
+    margin-inline: 0;
     width: max-content;
     background-color: white;
     color: black;
@@ -119,17 +123,22 @@ footer {
         max-width: 95%;
     }
 
-    .banner,
+    .banner {
+        flex-direction: column;
+    }
+
+    .apresentacao {
+        max-width: 100%;
+    }
+
     .atendimentos {
+
         align-items: center;
         flex-direction: column;
     }
 
-    .apresentacao h1,
-    .apresentacao p,
-    .apresentacao .btn {
-        margin: 15px 0;
-        max-width: 78%;
+    .ilustracao {
+        max-width: 100%;
     }
 
 }
