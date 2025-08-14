@@ -50,31 +50,32 @@
                         <h2>Informações Pessoais</h2>
                         <div class="campo">
                             <label>Nome Completo</label>
-                            <input name="nome" type="text" placeholder="Digite seu nome completo" required>
+                            <input name="nome" type="text" placeholder="Digite seu nome completo" required />
                         </div>
                         <div class="campo">
                             <label>E-mail</label>
-                            <input name="nome" type="email" placeholder="seuemail@.com">
+                            <input name="nome" type="email" placeholder="seuemail@.com" required />
                         </div>
                         <div class="campo">
                             <label>CPF</label>
-                            <input name="cpf" type="text" placeholder="000.000.000-00">
+                            <input name="cpf" type="text" placeholder="000.000.000-00" required />
                         </div>
                         <div class="campo">
                             <label>Data de Nascimento</label>
-                            <input name="data-nascimento" type="date" placeholder="dd/mm/aaaa">
+                            <input name="data-nascimento" type="date" placeholder="dd/mm/aaaa" required />
                         </div>
                         <div class="campo">
                             <label>Endereço Completo</label>
-                            <input name="endereco-completo" type="text" placeholder="Rua, número, bairro, cidade, CEP">
+                            <input name="endereco-completo" type="text" placeholder="Rua, número, bairro, cidade, CEP"
+                                required />
                         </div>
                         <div class="campo">
                             <label>Profissão</label>
-                            <input name="profissao" type="text" placeholder="Sua profissão">
+                            <input name="profissao" type="text" placeholder="Sua profissão" required />
                         </div>
                         <div class="campo">
                             <label>Estado Civil</label>
-                            <select name="estado-civil">
+                            <select name="estado-civil" required>
                                 <option value="" disabled selected>Selecione seu estado civil</option>
                                 <option value="solteiro">Solteiro(a)</option>
                                 <option value="casado">Casado(a)</option>
@@ -87,7 +88,7 @@
                         <div class="campo-radio">
                             <label>Sexo</label>
                             <div class="sexo">
-                                <input type="radio" id="masculino" name="sexo" value="masculino" required>
+                                <input type="radio" id="masculino" name="sexo" value="masculino" required />
                                 <label for="masculino">Masculino</label>
 
                                 <input type="radio" id="feminino" name="sexo" value="feminino">
