@@ -5,15 +5,9 @@ section .container {
 .banner {
     padding: 50px;
     display: flex;
-    background-color: black;
     justify-content: center;
+    background-color: black;
     gap: 10%;
-}
-
-.ilustracao {
-    display: flex;
-    align-items: center;
-    max-width: 25%;
 }
 
 .apresentacao {
@@ -26,24 +20,14 @@ section .container {
     color: var(--cor-principal);
 }
 
-.apresentacao h1,
-.apresentacao p {
-    color: white;
-}
-
 .apresentacao h1 {
     font-size: 70px;
+    color: white;
 }
 
 .apresentacao p {
     font-size: 25px;
-}
-
-.ilustracao img {
-    display: block;
-    margin-inline: auto;
-    max-width: 100%;
-    height: auto;
+    color: white;
 }
 
 .apresentacao .btn {
@@ -51,6 +35,19 @@ section .container {
     width: max-content;
     background-color: white;
     color: black;
+}
+
+.ilustracao {
+    display: flex;
+    align-items: center;
+    max-width: 25%;
+}
+
+.ilustracao img {
+    display: block;
+    margin-inline: auto;
+    max-width: 100%;
+    height: auto;
 }
 
 .atendimentos {
@@ -62,16 +59,16 @@ section .container {
 }
 
 .atendimentos div {
-    align-items: center;
     display: flex;
     flex-direction: column;
+    align-items: center;
     width: 33%;
     text-align: center;
     border-radius: 10px;
 }
 
 .atendimentos p {
-    margin-top: 0px;
+    margin-top: 0;
     font-size: 18px;
 }
 
@@ -82,7 +79,7 @@ section .container {
 
 .newsletter form {
     text-align: center;
-    margin: 15px auto 0 auto;
+    margin: 15px auto 0;
     border: none;
     max-width: 50%;
 }
@@ -118,7 +115,6 @@ footer {
 
 
 @media screen and (max-width: 1023px) {
-
     section .container {
         max-width: 95%;
     }
@@ -127,20 +123,15 @@ footer {
         flex-direction: column;
     }
 
-    .apresentacao {
-        max-width: 100%;
-    }
-
-    .atendimentos {
-
-        align-items: center;
-        flex-direction: column;
-    }
-
+    .apresentacao,
     .ilustracao {
         max-width: 100%;
     }
 
+    .atendimentos {
+        align-items: center;
+        flex-direction: column;
+    }
 }
 
 @media screen and (max-width: 768px) {
@@ -154,10 +145,6 @@ footer {
 
     .apresentacao p {
         font-size: 20px;
-    }
-
-    section .container {
-        grid-template-columns: 1fr;
     }
 
     .atendimentos p {
